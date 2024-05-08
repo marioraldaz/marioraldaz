@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Mario!</h1>
 <h3 align="center">Full-stack developer from Madrid, Spain.</h3>
 
-- 🔭 I’m currently working on [Bits&Bytes!](https://github.com/marioraldaz)
+- 🔭 I’m currently working on [NutriBest!](https://github.com/marioraldaz)
 
 - 🌱 I’m currently learning **ReactJS, sveltekit, PHP**
 
