@@ -1,23 +1,61 @@
-<h1 align="center">Hi 👋, I'm Mario!</h1>
-<h3 align="center">Full-stack developer from Madrid, Spain.</h3>
+# Hi there! Welcome to my GitHub world! 🚀
 
-- 🔭 I’m currently working on [NutriBest!](https://github.com/marioraldaz)
+import json
+from dataclasses import dataclass
+from typing import List, Dict, Any
 
-- 🌱 I’m currently learning **ReactJS, sveltekit, PHP**
+@dataclass
+class Developer:
+    name: str
+    profession: str
+    interests: List[str]
+    current_projects: List[str]
+    expertise: List[str]
+    social_media: Dict[str, str]
 
-- 👯 I’m looking to collaborate on **web application projects.**
+    def __init__(self, name: str, profession: str, interests: List[str], current_projects: List[str], 
+                 expertise: List[str], social_media: Dict[str, str]):
+        self.name = name
+        self.profession = profession
+        self.interests = interests
+        self.current_projects = current_projects
+        self.expertise = expertise
+        self.social_media = social_media
 
-- 🤝 I’m looking for help with **developing my skills.**
+    def to_json(self) -> str:
+        return json.dumps(self.__dict__, indent=4)
 
-- 💬 Ask me about **Anything!**
+# Create an instance of Developer
+dev = Developer(
+    name="Your Name",
+    profession="Software Engineer",
+    interests=["Machine Learning", "Web Development", "Data Science"],
+    current_projects=["Project A", "Project B", "Project C"],
+    expertise=["Python", "JavaScript", "Django", "React"],
+    social_media={"LinkedIn": "linkedin.com/in/yourprofile", "Twitter": "twitter.com/yourhandle"}
+)
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+# Decorate with ASCII art and colorful formatting
+print(r"""
+   ___              _                   ___           _           
+  / __|__ _ ___ __ (_)___ _ _  __ ___  | _ ) ___  ___| |_ ___ _ _ 
+ | (_ / _` (_-< '  \| / -_) ' \/ _/ -_) | _ \/ _ \/ _ \  _/ _ \ '_|
+  \___\__,_/__/_|_|_|_\___|_||_\__\___| |___/\___/\___/\__\___/_|  
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a> <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://svelte.dev" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="svelte" width="40" height="40"/> </a> </p>
+""")
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=marioraldaz&show_icons=true&locale=en&layout=compact" alt="marioraldaz" /></p>
+print("\033[1;33;40m")  # Yellow text
+print("Hello, fellow GitHubbers! 👋")
+print("\033[0;37;40m")  # Reset text color
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=marioraldaz&show_icons=true&locale=en" alt="marioraldaz" /></p>
+print("Here's a glimpse into my coding universe:")
+print(dev.to_json())
+
+print("\033[1;34;40m")  # Blue text
+print("Connect with me on social media:")
+for platform, handle in dev.social_media.items():
+    print(f"{platform}: {handle}")
+print("\033[0;37;40m")  # Reset text color
+
+# Output:
+# (Colorful ASCII art and formatted JSON representation of Developer)
